@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'MsAutenticacion.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': 'ec2-35-153-114-74.compute-1.amazonaws.com',
+        'NAME': 'dc0b8m9c8174ed',
+        'USER': 'jbqsuqvatsxoow',
+        'PORT': '5432',
+        'PASSWORD': 'bb077ac7340fc1cbcf5838911e5f1b81012e5689420d2938b133a3dfa0b7c25d',
     }
 }
 
