@@ -28,7 +28,7 @@ class registroView(APIView):
 
         print(data)
 
-        if(len(data['username']) > 3 and len(data['password']) > 4):
+        if len(data['username']) > 3 and len(data['password']) > 4:
             user = hotelUser.objects.create_user(data['username'], data['password'])
             user.save()
             return Response(data, status=status.HTTP_201_CREATED)
